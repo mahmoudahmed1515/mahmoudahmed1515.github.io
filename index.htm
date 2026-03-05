@@ -1,293 +1,567 @@
 <!DOCTYPE html>
+
 <html lang="ar" class="dark">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mahmoud Ahmed | Data Analyst Portfolio</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <script>
+
         tailwind.config = {
+
             darkMode: 'class',
+
             theme: {
+
                 extend: {
+
                     colors: {
+
                         primary: '#2DD4BF', // Teal color from screenshot
+
                         darkBg: '#0B0F1A',
+
                         cardBg: '#161B28',
+
                     }
+
                 }
+
             }
+
         }
+
     </script>
+
     <style>
+
         body { font-family: 'Inter', sans-serif; background-color: #0B0F1A; color: #E5E7EB; scroll-behavior: smooth; }
+
         .glow { box-shadow: 0 0 20px rgba(45, 212, 191, 0.2); }
+
         .teal-gradient { background: linear-gradient(135deg, #2DD4BF 0%, #0D9488 100%); }
+
     </style>
+
 </head>
+
 <body>
 
     <nav class="fixed w-full z-50 bg-darkBg/80 backdrop-blur-md border-b border-gray-800">
+
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
             <div class="text-primary font-bold text-xl">MA.</div>
+
             <div class="hidden md:flex gap-8 text-sm font-medium">
+
                 <a href="#about" class="hover:text-primary transition">ABOUT</a>
+
                 <a href="#skills" class="hover:text-primary transition">SKILLS</a>
+
                 <a href="#experience" class="hover:text-primary transition">EXPERIENCE</a>
+
                 <a href="#projects" class="hover:text-primary transition">PROJECTS</a>
+
                 <a href="#contact" class="hover:text-primary transition">CONTACT</a>
+
             </div>
+
             <a href="#" class="border border-primary text-primary px-4 py-1.5 rounded-md text-sm hover:bg-primary hover:text-darkBg transition">Download CV</a>
+
         </div>
+
     </nav>
 
     <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+
         <div class="relative mb-8">
+
             <div class="w-32 h-32 rounded-full border-2 border-primary p-1 overflow-hidden glow">
+
                 <img src="https://i.ibb.co/dsspJ0Mf/1689009792980.jpg" alt="Mahmoud Ahmed" class="w-full h-full rounded-full object-cover">
+
             </div>
+
         </div>
+
         <span class="text-primary tracking-[0.2em] text-xs font-bold mb-4">DATA ANALYST</span>
+
         <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white">Mahmoud <span class="text-primary">Ahmed</span></h1>
+
         <p class="max-w-2xl text-gray-400 leading-relaxed mb-10">
+
             I transform scattered data into clear growth strategies, helping businesses make <span class="text-white font-semibold underline decoration-primary">confident, evidence-based decisions</span> that increase their bottom line.
+
         </p>
+
         <div class="flex gap-4">
+
             <a href="#projects" class="bg-primary text-darkBg px-8 py-3 rounded-md font-bold hover:opacity-90 transition">Explore My Work</a>
+
             <a href="#contact" class="border border-gray-700 px-8 py-3 rounded-md font-bold hover:bg-gray-800 transition">Get In Touch</a>
+
         </div>
+
     </section>
 
     <section id="about" class="py-24 max-w-4xl mx-auto px-6">
+
         <h2 class="text-primary text-sm tracking-widest mb-4">// ABOUT ME</h2>
+
         <h3 class="text-3xl font-bold mb-6 text-white text-3xl">Turning Data Into <span class="text-primary">Insights</span></h3>
+
         <p class="text-gray-400 leading-relaxed mb-6 text-lg">
+
             My journey with data started with curiosity. As a Computer Science student at <span class="text-white">Thebes Academy for Information Technology</span>, I was always fascinated by how information moves behind systems.
+
         </p>
+
         <div class="grid md:grid-cols-3 gap-6 mt-12">
+
             <div class="bg-cardBg p-6 rounded-xl border border-gray-800">
+
                 <div class="text-primary mb-4">📈</div>
+
                 <h4 class="font-bold text-white mb-2">Deep Analysis</h4>
+
                 <p class="text-xs text-gray-400">Exploratory data analysis to uncover hidden trends.</p>
+
             </div>
+
             <div class="bg-cardBg p-6 rounded-xl border border-gray-800">
+
                 <div class="text-primary mb-4">📊</div>
+
                 <h4 class="font-bold text-white mb-2">Visual Dashboards</h4>
+
                 <p class="text-xs text-gray-400">Power BI & Tableau dashboards that tell compelling stories.</p>
+
             </div>
+
             <div class="bg-cardBg p-6 rounded-xl border border-gray-800">
+
                 <div class="text-primary mb-4">💬</div>
+
                 <h4 class="font-bold text-white mb-2">Clear Communication</h4>
+
                 <p class="text-xs text-gray-400">Translating complex numbers into actionable insights.</p>
+
             </div>
+
         </div>
+
     </section>
 
     <section id="skills" class="py-24 bg-darkBg px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-primary text-sm tracking-widest mb-4">// TECH STACK</h2>
-            <h3 class="text-4xl font-bold mb-12 text-white text-3xl">Skills & <span class="text-primary">Tools</span></h3>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-cardBg p-8 rounded-2xl border border-gray-800">
-                    <h4 class="text-primary font-bold mb-4 flex items-center gap-2"><span>&lt;/&gt;</span> Programming</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">Python (Pandas, NumPy)</span>
-                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">SQL (Server)</span>
-                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">R</span>
-                    </div>
-                </div>
-                <div class="bg-cardBg p-8 rounded-2xl border border-gray-800">
-                    <h4 class="text-primary font-bold mb-4 flex items-center gap-2"><span>📊</span> Visualization</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">Power BI</span>
-                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">Tableau</span>
-                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">Excel Dashboards</span>
-                    </div>
-                </div>
-                <div class="bg-cardBg p-8 rounded-2xl border border-gray-800">
-                    <h4 class="text-primary font-bold mb-4 flex items-center gap-2"><span>🛡️</span> Data Wrangling</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">ETL Processes</span>
-                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">Power Query</span>
-                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">Data Cleaning</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="experience" class="py-20 bg-[#0B0F1A] px-5">
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-primary text-sm tracking-widest mb-4">// TECH STACK</h2>
+
+            <h3 class="text-4xl font-bold mb-12 text-white text-3xl">Skills & <span class="text-primary">Tools</span></h3>
+
+            
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-cardBg p-8 rounded-2xl border border-gray-800">
+
+                    <h4 class="text-primary font-bold mb-4 flex items-center gap-2"><span>&lt;/&gt;</span> Programming</h4>
+
+                    <div class="flex flex-wrap gap-2">
+
+                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">Python (Pandas, NumPy)</span>
+
+                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">SQL (Server)</span>
+
+                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">R</span>
+
+                    </div>
+
+                </div>
+
+                <div class="bg-cardBg p-8 rounded-2xl border border-gray-800">
+
+                    <h4 class="text-primary font-bold mb-4 flex items-center gap-2"><span>📊</span> Visualization</h4>
+
+                    <div class="flex flex-wrap gap-2">
+
+                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">Power BI</span>
+
+                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">Tableau</span>
+
+                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">Excel Dashboards</span>
+
+                    </div>
+
+                </div>
+
+                <div class="bg-cardBg p-8 rounded-2xl border border-gray-800">
+
+                    <h4 class="text-primary font-bold mb-4 flex items-center gap-2"><span>🛡️</span> Data Wrangling</h4>
+
+                    <div class="flex flex-wrap gap-2">
+
+                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">ETL Processes</span>
+
+                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">Power Query</span>
+
+                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full">Data Cleaning</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  <section id="experience" class="py-20 bg-[#0B0F1A] px-5">
     <div class="max-w-xl mx-auto">
-        
-        <header class="text-center md:text-left mb-12">
-            <h2 class="text-primary text-[10px] tracking-[0.3em] mb-3 font-mono uppercase font-bold text-shadow-sm">
-                // CAREER
+
+        <header class="text-center mb-16 relative z-10">
+            <h2 class="text-primary text-[10px] tracking-[0.4em] mb-3 font-mono uppercase font-bold text-shadow-sm opacity-80">
+                // CAREER & JOURNEY
             </h2>
-            <h3 class="text-3xl md:text-5xl font-bold text-white tracking-tighter">
+            <h3 class="text-4xl md:text-5xl font-bold text-white tracking-tighter">
                 Experience & <span class="text-primary italic">Education</span>
             </h3>
         </header>
 
-        <div class="space-y-6">
-            
-            <div class="bg-[#161B28] rounded-[2rem] p-6 border border-white/5 flex items-start gap-5 shadow-xl transition-all duration-300 hover:border-primary/20">
-                <div class="w-14 h-14 rounded-2xl bg-darkBg border border-white/10 flex-shrink-0 flex items-center justify-center p-2 overflow-hidden shadow-inner">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" alt="Digilians" class="w-full h-full object-contain">
-                </div>
+        <div class="space-y-12">
+            <div class="relative bg-[#161B28] rounded-[2rem] border border-white/5 shadow-2xl transition-all duration-500 hover:border-primary/30 group overflow-hidden flex flex-col">
                 
-                <div class="flex-1">
-                    <div class="flex justify-between items-start mb-1">
-                        <h4 class="text-lg font-bold text-white leading-tight">Digilians Data Analysis</h4>
-                        <span class="text-[9px] font-bold text-primary bg-primary/10 px-2 py-0.5 rounded uppercase tracking-tighter">Active</span>
-                    </div>
-                    <p class="text-primary text-[11px] font-mono mb-4 uppercase tracking-wider">Dec 2025 - Present</p>
+                <div class="relative w-full h-48 overflow-hidden">
+                    <div class="absolute inset-0 bg-primary/10 blur-[60px] rounded-full scale-150 group-hover:bg-primary/20 transition-all duration-700"></div>
                     
-                    <ul class="space-y-3">
-                        <li class="flex gap-3 text-gray-400 text-xs leading-relaxed">
-                            <span class="text-primary mt-1 text-[8px]">◆</span>
-                            <span>Processed and cleaned real-world datasets using <span class="text-white">Python & SQL</span>.</span>
+                    <img src="https://i.ibb.co/JWtb2KgM/Digilians.png" alt="Digilians" class="absolute inset-0 w-full h-full object-cover object-center scale-110 group-hover:scale-100 transition-transform duration-700 opacity-30 grayscale group-hover:grayscale-0 group-hover:opacity-50">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#161B28] via-[#161B28]/80 to-transparent"></div>
+                </div>
+
+                <div class="relative z-10 p-10 -mt-20 text-center flex flex-col items-center">
+                    <span class="inline-block text-[10px] font-black text-primary bg-primary/10 px-4 py-1 rounded-full uppercase tracking-widest mb-4 border border-primary/20 backdrop-blur-sm">Active</span>
+                    <h4 class="text-2xl md:text-3xl font-bold text-white leading-tight mb-2 text-shadow-lg">Digilians Data Analysis</h4>
+                    <p class="text-primary text-[11px] font-mono mb-8 uppercase tracking-[0.3em] font-semibold">Dec 2025 - Present</p>
+
+                    <ul class="space-y-4 text-left max-w-sm mx-auto border-t border-white/5 pt-8 w-full">
+                        <li class="flex gap-4 text-gray-400 text-sm leading-relaxed group/item">
+                            <span class="text-primary mt-1 text-[10px] group-hover/item:scale-150 transition-transform">◆</span>
+                            <span>Processed and cleaned real-world datasets using <span class="text-white font-semibold">Python & SQL</span>.</span>
                         </li>
-                        <li class="flex gap-3 text-gray-400 text-xs leading-relaxed">
-                            <span class="text-primary mt-1 text-[8px]">◆</span>
-                            <span>Performed <span class="text-white">EDA</span> to uncover trends and insights.</span>
+                        <li class="flex gap-4 text-gray-400 text-sm leading-relaxed group/item">
+                            <span class="text-primary mt-1 text-[10px] group-hover/item:scale-150 transition-transform">◆</span>
+                            <span>Performed <span class="text-white font-semibold">EDA</span> to uncover trends and insights.</span>
                         </li>
-                        <li class="flex gap-3 text-gray-400 text-xs leading-relaxed">
-                            <span class="text-primary mt-1 text-[8px]">◆</span>
-                            <span>Built interactive dashboards with <span class="text-white">Power BI / Tableau</span>.</span>
+                        <li class="flex gap-4 text-gray-400 text-sm leading-relaxed group/item">
+                            <span class="text-primary mt-1 text-[10px] group-hover/item:scale-150 transition-transform">◆</span>
+                            <span>Built interactive dashboards with <span class="text-white font-semibold">Power BI / Tableau</span>.</span>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="bg-[#161B28] rounded-[2rem] p-6 border border-white/5 flex items-start gap-5 shadow-xl transition-all duration-300 hover:border-primary/20">
-                <div class="w-14 h-14 rounded-2xl bg-darkBg border border-white/10 flex-shrink-0 flex items-center justify-center p-2 overflow-hidden shadow-inner">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135810.png" alt="Thebes Academy" class="w-full h-full object-contain">
+            <div class="relative bg-[#161B28] rounded-[2rem] border border-white/5 shadow-2xl transition-all duration-500 hover:border-primary/30 group overflow-hidden flex flex-col">
+                
+                <div class="relative w-full h-48 overflow-hidden">
+                    <img src="https://i.ibb.co/tpWqYzQ4/IMG.png" alt="Thebes Academy" class="absolute inset-0 w-full h-full object-cover object-center scale-110 group-hover:scale-100 transition-transform duration-700 opacity-20 grayscale group-hover:grayscale-0 group-hover:opacity-40">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#161B28] via-[#161B28]/80 to-transparent"></div>
                 </div>
 
-                <div class="flex-1">
-                    <h4 class="text-lg font-bold text-white leading-tight mb-1">B.Sc. Computer Science</h4>
-                    <p class="text-gray-500 text-[11px] font-mono mb-4">Thebes Academy | 2019 - 2023</p>
-                    
-                    <div class="bg-darkBg/40 rounded-xl p-4 border border-white/5">
-                        <p class="text-gray-400 text-[11px] leading-relaxed italic">
-                            Graduated with a <span class="text-primary font-bold">3.0 GPA</span>. Developed a Blood Bank mobile app using <span class="text-white">Flutter</span> as a graduation project.
+                <div class="relative z-10 p-10 -mt-20 text-center flex flex-col items-center">
+                    <h4 class="text-2xl md:text-3xl font-bold text-white leading-tight mb-2 text-shadow-lg">B.Sc. Computer Science</h4>
+                    <p class="text-gray-500 text-xs font-mono mb-8 tracking-widest uppercase">Thebes Academy | 2019 - 2023</p>
+
+                    <div class="bg-darkBg/60 rounded-[1.5rem] p-6 border border-white/5 backdrop-blur-sm w-full">
+                        <p class="text-gray-400 text-sm leading-relaxed italic">
+                            Graduated with a <span class="text-primary font-bold">3.0 GPA</span>. <br class="hidden md:block">
+                            Developed a <span class="text-white font-semibold underline decoration-primary/30">Blood Bank mobile app</span> using Flutter as a graduation project, focusing on real-time data processing and seamless UX.
                         </p>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-    </section>
+</section>
+  
+  
+  
+  
+  
+  
+  
+  
 
-<section id="projects" class="py-20 bg-[#0B0F1A] px-5">
-    <div class="max-w-xl mx-auto">
-        
-        <header class="text-center md:text-left mb-12">
-            <h2 class="text-primary text-[10px] tracking-[0.3em] mb-3 font-mono uppercase font-bold text-shadow-sm">
-                // PROJECTS
-            </h2>
-            <h3 class="text-3xl md:text-5xl font-bold text-white tracking-tighter">
-                Featured <span class="text-primary italic">Work</span>
-            </h3>
-        </header>
-        
-        <article class="bg-[#161B28] rounded-[2.5rem] overflow-hidden border border-white/5 shadow-2xl transition-all duration-500 hover:border-primary/20 group">
+    
+
+    
+                
+
             
+
+        
+
+    
+<section id="projects" class="py-20 bg-[#0B0F1A] px-5">
+
+    <div class="max-w-xl mx-auto">
+
+        
+
+        <header class="text-center md:text-left mb-12">
+
+            <h2 class="text-primary text-[10px] tracking-[0.3em] mb-3 font-mono uppercase font-bold text-shadow-sm">
+
+                // PROJECTS
+
+            </h2>
+
+            <h3 class="text-3xl md:text-5xl font-bold text-white tracking-tighter">
+
+                Featured <span class="text-primary italic">Work</span>
+
+            </h3>
+
+        </header>
+
+        
+
+        <article class="bg-[#161B28] rounded-[2.5rem] overflow-hidden border border-white/5 shadow-2xl transition-all duration-500 hover:border-primary/20 group">
+
+            
+
             <div class="h-60 relative overflow-hidden">
+
                 <img src="https://i.ibb.co/8g8Mqbbc/Stock-Cake-Crimson-Sample-Testing-3124104-medium.webp" 
+
                      alt="Auxilio Blood Bank App" 
+
                      class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+
                 <div class="absolute inset-0 bg-gradient-to-t from-[#161B28] via-transparent to-transparent"></div>
+
             </div>
 
             <div class="px-7 pb-10 -mt-6 relative z-10">
+
                 
+
                 <div class="flex flex-col gap-2 mb-6">
+
                     <span class="w-fit text-[9px] bg-primary/10 text-primary border border-primary/20 px-3 py-1 rounded-full font-bold tracking-widest uppercase font-mono">
+
                         GRADUATION PROJECT
+
                     </span>
+
                     <span class="text-[10px] text-gray-500 font-mono">Sep 2022 — May 2023</span>
+
                 </div>
 
                 <h4 class="text-2xl font-bold text-white mb-4 tracking-tight">
+
                     Auxilio — Blood Bank App
+
                 </h4>
+
                 <p class="text-gray-400 text-[13px] leading-relaxed mb-8 font-medium">
+
                     A mobile platform designed to optimize blood donation management, connecting hospitals with donors through a seamless, real-time experience.
+
                 </p>
 
                 <div class="space-y-6 mb-10">
+
                     <div class="flex gap-4">
+
                         <div class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_#2DD4BF] flex-shrink-0"></div>
+
                         <div>
+
                             <h5 class="text-[13px] font-bold text-white uppercase tracking-wider">Leading UI/UX</h5>
+
                             <p class="text-gray-500 text-[11px] mt-1 leading-normal">Created intuitive wireframes and high-fidelity prototypes to streamline the donor journey.</p>
+
                         </div>
+
                     </div>
 
                     <div class="flex gap-4">
+
                         <div class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_#2DD4BF] flex-shrink-0"></div>
+
                         <div>
+
                             <h5 class="text-[13px] font-bold text-white uppercase tracking-wider">Technical Documentation</h5>
+
                             <p class="text-gray-500 text-[11px] mt-1 leading-normal">Co-authored technical documentation including system requirements and user manuals.</p>
+
                         </div>
+
                     </div>
 
                     <div class="flex gap-4">
+
                         <div class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_#2DD4BF] flex-shrink-0"></div>
+
                         <div>
+
                             <h5 class="text-[13px] font-bold text-white uppercase tracking-wider">Impactful Solution</h5>
+
                             <p class="text-gray-500 text-[11px] mt-1 leading-normal">Built a mobile solution to optimize management and improve communication.</p>
+
                         </div>
+
                     </div>
+
                 </div>
 
                 <div class="flex flex-wrap gap-2 mb-10">
-                    <span class="bg-white/5 text-gray-400 text-[10px] px-3 py-1.5 rounded-lg border border-white/5 font-mono">#Flutter</span>
-                    <span class="bg-white/5 text-gray-400 text-[10px] px-3 py-1.5 rounded-lg border border-white/5 font-mono"># Mobile-App</span>
-                    <span class="bg-white/5 text-gray-400 text-[10px] px-3 py-1.5 rounded-lg border border-white/5 font-mono">#UI/UX</span>
-                    <span class="bg-white/5 text-gray-400 text-[10px] px-3 py-1.5 rounded-lg border border-white/5 font-mono">#Real-time-Data</span>
+
+                    <span class="bg-white/5 text-gray-400 text-[10px] px-3 py-1.5 rounded-lg border border-white/5 font-mono">Flutter</span>
+
+                    <span class="bg-white/5 text-gray-400 text-[10px] px-3 py-1.5 rounded-lg border border-white/5 font-mono"> Mobile-App</span>
+
+                    <span class="bg-white/5 text-gray-400 text-[10px] px-3 py-1.5 rounded-lg border border-white/5 font-mono">UI/UX</span>
+
+                    <span class="bg-white/5 text-gray-400 text-[10px] px-3 py-1.5 rounded-lg border border-white/5 font-mono">Real-time-Data</span>
+
                 </div>
 
                 <a href="#" class="block w-full text-center bg-white text-[#0B0F1A] text-xs font-black py-4 rounded-2xl transition-all duration-300 hover:bg-primary hover:text-white uppercase tracking-widest shadow-lg shadow-white/5">
+
                     View Case Study
+
                 </a>
+
             </div>
+
         </article>
 
     </div>
+
     </section>
+
     <section id="contact" class="py-24 text-center px-6">
+
         <h2 class="text-primary text-sm tracking-widest mb-4">// CONTACT</h2>
+
         <h3 class="text-5xl font-bold mb-12 text-white">Let's <span class="text-primary">Connect</span></h3>
+
         <p class="text-gray-400 max-w-xl mx-auto mb-12">
+
             I'm open to data analyst opportunities and collaborations. Feel free to reach out.
+
         </p>
+
         
+
         <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-16">
+
             <div class="bg-cardBg p-6 rounded-xl border border-gray-800">
+
                 <p class="text-xs text-gray-500 mb-2">EMAIL</p>
+
                 <p class="text-white text-sm">mahmoudahmed21634@gmail.com</p>
+
             </div>
+
             <div class="bg-cardBg p-6 rounded-xl border border-gray-800">
+
                 <p class="text-xs text-gray-500 mb-2">LINKEDIN</p>
-                <a href="#" class="text-primary text-sm hover:underline">Connect on LinkedIn</a>
+
+                <a href="www.linkedin.com/in/
+
+mahmoud-ahmed-data-analysis" class="text-primary text-sm hover:underline">Connect on LinkedIn</a>
+
             </div>
+
             <div class="bg-cardBg p-6 rounded-xl border border-gray-800">
+
                 <p class="text-xs text-gray-500 mb-2">PHONE</p>
+
                 <p class="text-white text-sm">+20 127 863 3044</p>
+
             </div>
+
         </div>
 
         <button class="bg-primary text-darkBg px-10 py-4 rounded-full font-bold glow hover:scale-105 transition">Download My CV</button>
+
     </section>
 
     <footer class="py-12 border-t border-gray-900 text-center text-gray-600 text-xs">
+
         <p>© 2026 Mahmoud Ahmed. All rights reserved.</p>
+
     </footer>
 
 </body>
-                </html>
+
+</html><!DOCTYPE html>
+
+<html lang="ar" class="dark">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mahmoud Ahmed | Data Analyst Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script>
+
+        tailwind.config = {
+
+            darkMode: 'class',
+
+            theme: {
+
+                extend: {
+
+                    colors: {
+
+                        primary: '#2DD4BF', // Teal color from screenshot
+
+                        darkBg: '#0B0F1A',
+
+                        cardBg: '#161B28',
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+    <style>
+
+        body { font-family: 'Inter', sans-serif; background
