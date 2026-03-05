@@ -1,40 +1,291 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="ar" class="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#1a1a2e" />
-  <title>Alex Chen - Full Stack Developer</title>
-  <meta name="description" content="Full stack developer crafting polished digital experiences. Specializing in React, TypeScript, and modern web technologies." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-            mono: ['JetBrains Mono', 'monospace'],
-          },
-          colors: {
-            background: '#1a1a2e',
-            foreground: '#ebebeb',
-            card: '#232340',
-            'card-foreground': '#ebebeb',
-            primary: '#2dd4bf',
-            'primary-foreground': '#1a1a2e',
-            secondary: '#2a2a44',
-            'secondary-foreground': '#c8c8c8',
-            muted: '#2a2a44',
-            'muted-foreground': '#8b8b8b',
-            accent: '#2dd4bf',
-            'accent-foreground': '#1a1a2e',
-            border: '#333355',
-            input: '#2a2a44',
-            ring: '#2dd4bf',
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmoud Ahmed | Data Analyst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2DD4BF',
+                        surface: '#0F172A',
+                        card: '#1E293B',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            background-color: #020617; 
+            color: #F8FAFC; 
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        
+        /* تأثير الزجاج */
+        .glass {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .glass:hover {
+            border-color: rgba(45, 212, 191, 0.3);
+            transform: translateY(-5px);
+            background: rgba(30, 41, 59, 0.7);
+        }
+
+        /* توهج الخلفية */
+        .blob {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(45, 212, 191, 0.1) 0%, rgba(2, 6, 23, 0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        /* خطوط التحديد المضيئة */
+        .gradient-border {
+            position: relative;
+        }
+        .gradient-border::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 40px; height: 3px;
+            background: #2DD4BF;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #1E293B; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #2DD4BF; }
+    </style>
+</head>
+<body class="font-sans">
+
+    <div class="blob top-0 left-[-100px]"></div>
+    <div class="blob bottom-0 right-[-100px]"></div>
+
+    <nav class="fixed w-full z-50 top-0 bg-[#020617]/80 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-surface font-black">M</div>
+                <span class="font-bold tracking-tighter text-xl">Mahmoud.</span>
+            </div>
+            <div class="hidden md:flex gap-10 text-[13px] font-semibold tracking-widest text-gray-400">
+                <a href="#about" class="hover:text-primary transition">ABOUT</a>
+                <a href="#skills" class="hover:text-primary transition">SKILLS</a>
+                <a href="#experience" class="hover:text-primary transition">EXPERIENCE</a>
+                <a href="#projects" class="hover:text-primary transition">PROJECTS</a>
+            </div>
+            <a href="#" class="bg-white/5 hover:bg-white/10 border border-white/10 px-5 py-2 rounded-full text-[13px] font-bold transition">Contact Me</a>
+        </div>
+    </nav>
+
+    <section class="h-screen flex flex-col justify-center items-center px-6 relative">
+        <div class="w-40 h-40 rounded-3xl rotate-12 border border-primary/20 p-2 mb-10 transition-transform hover:rotate-0 duration-500 overflow-hidden">
+            <div class="w-full h-full bg-card rounded-2xl flex items-center justify-center overflow-hidden -rotate-12 hover:rotate-0 transition-transform duration-500">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="Profile" class="w-full h-full object-cover">
+            </div>
+        </div>
+        
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[11px] font-bold tracking-widest mb-6">
+            <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+            </span>
+            DATA ANALYST & STRATEGIST
+        </div>
+
+        <h1 class="text-5xl md:text-8xl font-black text-center mb-8 tracking-tighter leading-none">
+            Turning Data Into <br> <span class="text-primary italic">Actionable</span> Insights
+        </h1>
+
+        <p class="max-w-xl text-center text-gray-400 text-lg leading-relaxed mb-12">
+            Hi, I'm <span class="text-white font-medium">Mahmoud Ahmed</span>. I specialize in bridging the gap between raw data and business growth.
+        </p>
+
+        <div class="flex flex-col md:flex-row gap-5">
+            <a href="#projects" class="px-10 py-4 bg-primary text-surface font-bold rounded-full shadow-lg shadow-primary/20 hover:scale-105 transition">View Case Studies</a>
+            <a href="#" class="px-10 py-4 glass font-bold rounded-full flex items-center gap-2">Download CV <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg></a>
+        </div>
+    </section>
+
+    <section id="about" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass p-8 rounded-[32px]">
+                <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">📊</div>
+                <h4 class="text-xl font-bold mb-3">Deep Analysis</h4>
+                <p class="text-sm text-gray-400 leading-relaxed">Uncovering patterns that aren't visible to the naked eye using Python and R.</p>
+            </div>
+            <div class="glass p-8 rounded-[32px]">
+                <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">💡</div>
+                <h4 class="text-xl font-bold mb-3">Visual Storytelling</h4>
+                <p class="text-sm text-gray-400 leading-relaxed">Converting numbers into beautiful, interactive dashboards that tell a story.</p>
+            </div>
+            <div class="glass p-8 rounded-[32px]">
+                <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">🚀</div>
+                <h4 class="text-xl font-bold mb-3">Impact Driven</h4>
+                <p class="text-sm text-gray-400 leading-relaxed">Focusing on KPIs that actually drive revenue and operational efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="max-w-7xl mx-auto px-6 py-32">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
+            <div class="max-w-xl">
+                <h2 class="text-primary font-mono text-sm tracking-[0.3em] mb-4 uppercase">// Tech Stack</h2>
+                <h3 class="text-4xl md:text-5xl font-bold leading-tight">Professional <span class="text-gray-500">Toolbox</span></h3>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="space-y-6">
+                <h4 class="font-bold flex items-center gap-3">
+                    <span class="w-8 h-px bg-primary"></span> Programming
+                </h4>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-medium">Python (Pandas/NumPy)</span>
+                    <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-medium">SQL Server</span>
+                    <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-medium">R</span>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <h4 class="font-bold flex items-center gap-3">
+                    <span class="w-8 h-px bg-primary"></span> Visualization
+                </h4>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-medium">Power BI</span>
+                    <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-medium">Tableau</span>
+                    <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-medium">D3.js</span>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <h4 class="font-bold flex items-center gap-3">
+                    <span class="w-8 h-px bg-primary"></span> Platforms
+                </h4>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-medium">Jupyter</span>
+                    <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-medium">BigQuery</span>
+                    <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-medium">Git/GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="max-w-7xl mx-auto px-6 py-32 border-t border-white/5">
+        <div class="grid md:grid-cols-12 gap-10">
+            <div class="md:col-span-4">
+                <h2 class="text-primary font-mono text-sm tracking-widest mb-4">// EXPERIENCE</h2>
+                <h3 class="text-4xl font-bold mb-10">Career <br> Journey</h3>
+            </div>
+            <div class="md:col-span-8 space-y-20">
+                <div class="group relative pl-10">
+                    <div class="absolute left-0 top-0 w-1 h-full bg-white/5 overflow-hidden">
+                        <div class="w-full h-0 group-hover:h-full bg-primary transition-all duration-700"></div>
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-2xl font-bold">Digilians Data Analysis</h4>
+                        <span class="text-primary font-mono text-xs">2025 - PRESENT</span>
+                    </div>
+                    <p class="text-gray-500 mb-6 font-medium">Ministry of Communications & Information Tech.</p>
+                    <ul class="space-y-4 text-gray-400 text-sm leading-relaxed">
+                        <li class="flex gap-3"><span>▹</span> Cleaned and prepared large datasets for predictive modeling.</li>
+                        <li class="flex gap-3"><span>▹</span> Automated reporting workflows reducing manual effort by 40%.</li>
+                    </ul>
+                </div>
+                <div class="group relative pl-10">
+                    <div class="absolute left-0 top-0 w-1 h-full bg-white/5 overflow-hidden">
+                        <div class="w-full h-0 group-hover:h-full bg-primary transition-all duration-700"></div>
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-2xl font-bold">B.Sc. Computer Science</h4>
+                        <span class="text-gray-500 font-mono text-xs">2019 - 2023</span>
+                    </div>
+                    <p class="text-gray-500 mb-6 font-medium">Thebes Academy</p>
+                    <p class="text-gray-400 text-sm">Graduated with a focus on data structures and algorithms. GPA 3.0.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-7xl mx-auto px-6 py-32">
+        <div class="mb-20">
+            <h2 class="text-primary font-mono text-sm tracking-widest mb-4 uppercase">// Selected Work</h2>
+            <h3 class="text-5xl font-bold">Featured <span class="text-gray-500 italic">Work</span></h3>
+        </div>
+
+        <div class="group glass rounded-[40px] overflow-hidden flex flex-col lg:flex-row">
+            <div class="lg:w-1/2 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1551288049-bbda38a5f9a5?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Blood Bank App">
+            </div>
+            <div class="lg:w-1/2 p-12 flex flex-col justify-center">
+                <span class="text-primary font-mono text-[10px] mb-6">CASE STUDY 01</span>
+                <h4 class="text-3xl font-bold mb-6">Auxilio — Blood Bank Ecosystem</h4>
+                <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                    An end-to-end data-driven platform that manages blood inventory and donor matching. Used real-time analytics to reduce response time in critical emergencies.
+                </p>
+                <div class="flex flex-wrap gap-3 mb-10">
+                    <span class="font-mono text-[10px] text-gray-500 uppercase tracking-tighter">#Python</span>
+                    <span class="font-mono text-[10px] text-gray-500 uppercase tracking-tighter">#PostgreSQL</span>
+                    <span class="font-mono text-[10px] text-gray-500 uppercase tracking-tighter">#PowerBI</span>
+                </div>
+                <a href="#" class="text-sm font-bold flex items-center gap-3 group/link">
+                    View Project <span class="group-hover/link:translate-x-2 transition-transform">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-40 text-center">
+        <h2 class="text-6xl md:text-8xl font-black mb-12 tracking-tighter leading-tight">
+            Ready to <span class="text-primary">analyze?</span>
+        </h2>
+        <p class="text-gray-400 text-lg mb-12">I'm currently available for freelance projects and full-time opportunities.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-20">
+            <div class="glass p-6 rounded-2xl">
+                <p class="text-[10px] font-bold text-gray-500 tracking-widest uppercase mb-2">Email</p>
+                <p class="text-sm font-medium">mahmoudahmed21634@gmail.com</p>
+            </div>
+            <div class="glass p-6 rounded-2xl">
+                <p class="text-[10px] font-bold text-gray-500 tracking-widest uppercase mb-2">LinkedIn</p>
+                <a href="#" class="text-sm font-medium text-primary hover:underline">Connect</a>
+            </div>
+            <div class="glass p-6 rounded-2xl">
+                <p class="text-[10px] font-bold text-gray-500 tracking-widest uppercase mb-2">WhatsApp</p>
+                <p class="text-sm font-medium">+20 127 863 3044</p>
+            </div>
+        </div>
+
+        <a href="mailto:mahmoudahmed21634@gmail.com" class="inline-block px-12 py-5 bg-white text-surface font-black rounded-full hover:bg-primary transition duration-500">START A CONVERSATION</a>
+    </section>
+
+    <footer class="max-w-7xl mx-auto px-6 py-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-600 font-bold tracking-widest uppercase gap-4">
+        <p>© 2026 MAHMOUD AHMED</p>
+        <div class="flex gap-10">
+            <a href="#" class="hover:text-white transition">Twitter</a>
+            <a href="#" class="hover:text-white transition">GitHub</a>
+            <a href="#" class="hover:text-white transition">Behance</a>
+        </div>
+    </footer>
+
+</body>
+                  </html>            ring: '#2dd4bf',
           },
         },
       },
